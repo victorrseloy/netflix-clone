@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /.netlify/
+/.vscode/
 /.pnp
 .pnp.js
 

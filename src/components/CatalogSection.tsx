@@ -6,11 +6,14 @@ const CatalogSectionContainer = styled.div``;
 
 const CatalogSectionTitle = styled.span`
   color: white;
+  font-family:'Netflix Sans';
+  font-size:12px;
+  font-weight:700;
 `;
 
 const CatalogSection = () => (
   <CatalogSectionContainer>
-    <CatalogSectionTitle>Section Title</CatalogSectionTitle>
+    <CatalogSectionTitle>Watch again</CatalogSectionTitle>
     <CatalogCarroussel />
   </CatalogSectionContainer>
 );
