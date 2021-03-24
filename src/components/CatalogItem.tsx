@@ -17,8 +17,15 @@ const Item = styled.div<itemProps>`
       ? `url("https://occ-0-769-768.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXuMUwXKcs7UyGSJ-9-GiQ_QhllziHA3E4s8A9zg-f75VcyE190TZi0dfpGRhAQRLa3rg9XDz05dwi9fbmp9MlL6LAM.webp?r=2ac")`
       : `url("https://occ-0-769-768.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWGIqnOTz0bKl0FKDZLc810tpErb3Q-BZiONLqzdhwzRGQgMDMqRfpIMNokDmgLZzNSuJQJrCn9SsHh9FIZTcrO7PNM.webp?r=51e")`};
   background-size: cover;
-  @media (min-width: 800px) {
+  @media ${(props) => props.theme.breakpoints.tablet} {
     min-width: 33%;
+  }
+  @media ${(props) => props.theme.breakpoints.laptop} {
+    min-width: 25%;
+  }
+
+  @media ${(props) => props.theme.breakpoints.laptopL} {
+    min-width: 20%;
   }
 `;
 
